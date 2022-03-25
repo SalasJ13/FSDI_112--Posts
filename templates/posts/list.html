@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block title %}Posts{% endblock title %}
+
+{% block content %}
+ <!--     <div class="card">
+            <h1>Posts</h1>
+        <ul>
+            {% for post in post_list %}
+            <li>
+                <a href="{% url 'post_detail' post.id %}">
+                    <i class="fa-solid fa-thumbtack"></i>
+                    {{post.title}}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>-->
+    <section>
+        <div class="row">
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-thumbtack"></i>
+            </div>
+            <h3>Posts</h3>
+            <ul>
+                {% for post in post_list %}
+                <li>
+                    <a href="{% url 'post_detail' post.id %}">
+                        {{post.title}}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!--    <section>
+                <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                    <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Service Heading</h3>
+                    <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                    consequatur necessitatibus eaque.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>--> 
+
+
+
+{% endblock content %}

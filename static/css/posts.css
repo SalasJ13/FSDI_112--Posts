@@ -1,0 +1,114 @@
+/*Formulario para crear,editar y eliminar un nuevo post 
+*/
+.body {
+  color: #343a40;
+}
+.form {
+  width: 425px;
+  height: 500px;
+  background: linear-gradient(
+    /* #ffffff 98%,
+    #7209b7 2% */ #b185db 50%,
+    #b185db 50%
+  );
+  box-shadow: e 0 35px Orgba (0, 0, 0, 0.12);
+  position: absolute;
+  top: 100px;
+  left: 430px;
+  border: 1px #7209b7;
+  border-radius: 10px;
+  padding: 25px;
+  color: #343a40;
+}
+.form h1 {
+  width: 220px;
+  font-family: Verdana;
+  text-align: center;
+  color: #7209b7;
+  font-size: 22px;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+}
+.form input {
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid #7209b7;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #343a40;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 0px;
+  font-family: Verdana;
+}
+.form input:focus {
+  outline: none;
+}
+.btn {
+  width: 240px;
+  height: 40px;
+  background: #7209b7;
+  border: none;
+  /*margin-top: 130px;*/
+  position: relative;
+  top: 230px;
+  left: 70px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.4s ease;
+}
+.btn:hover {
+  background-color: #480ca8;
+  color: #fff;
+}
+.btn a {
+  text-decoration: none;
+  color: #343a40;
+}
+
+/*La parte de DELETE POST*/
+.form p {
+  width: 323px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid #7209b7;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #343a40;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: Verdana;
+}
+.p-delete {
+  text-align: center;
+}
+.btn-delete {
+  width: 240px;
+  height: 40px;
+  background: #7209b7;
+  border: none;
+  /*margin-top: 130px;*/
+  position: relative;
+  top: 275px;
+  left: 70px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.4s ease;
+}
+.btn-delete:hover {
+  background-color: #7209b7;
+  color: white;
+}
+.btn-delete a {
+  text-decoration: none;
+  color: #343a40;
+}

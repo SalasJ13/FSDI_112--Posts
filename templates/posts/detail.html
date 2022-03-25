@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{post.title}}
+{% endblock title %}
+
+{% block content %}
+<!--    <h1>{{post.title}}</h1>
+    <p>{{post.text}}</p>
+    <a href="{% url 'posts_list' %}">Back</a>
+    <a href="{% url 'post_edit' post.id %}">Edit Post</a>
+    <a href="{% url 'post_delete' post.id %}">Delete Post</a>-->  
+
+<section>
+        <div class="row">
+    <div class="column">
+        <div class="card">
+            <div class="icon-wrapper">
+                <i class="fa-solid fa-thumbtack"></i>
+            </div>
+            <h3>{{post.title}}</h3>
+            <p>{{post.text}}</p>
+            <a class="btn-detail" href="{% url 'posts_list' %}">Back</a>
+            <a class="btn-detail" href="{% url 'post_edit' post.id %}">Edit Post</a>
+            <a class="btn-detail" href="{% url 'post_delete' post.id %}">Delete Post</a>
+        </div>
+    </div>
+</div>
+</section>
+
+{% endblock content %}
